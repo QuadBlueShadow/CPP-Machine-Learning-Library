@@ -17,7 +17,7 @@ std::vector<float> Model::run(std::vector<float> inputs){
 
 void Model::backprop(std::vector<float> loss){
     // Go through each layer and run backpropogation to find our adjustement gradients
-    for (int i = 0; i < this->layers.size(); i++){
+    for (int i = this->layers.size()-1; i >= 0; i--){
         loss = layers[i]->backprop(loss);
     }
 }

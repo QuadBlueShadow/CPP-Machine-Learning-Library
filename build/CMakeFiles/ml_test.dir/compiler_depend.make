@@ -30,6 +30,7 @@ CMakeFiles/ml_test.dir/TestingFile.cpp.obj: C:/Projects/CPPML/TestingFile.cpp \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/char_traits.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/charconv.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/chrono.h \
+  C:/msys64/ucrt64/include/c++/14.2.0/bits/codecvt.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/concept_check.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h \
@@ -37,6 +38,7 @@ CMakeFiles/ml_test.dir/TestingFile.cpp.obj: C:/Projects/CPPML/TestingFile.cpp \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/exception.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/exception_defines.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/exception_ptr.h \
+  C:/msys64/ucrt64/include/c++/14.2.0/bits/fstream.tcc \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/functexcept.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/functional_hash.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
@@ -68,6 +70,7 @@ CMakeFiles/ml_test.dir/TestingFile.cpp.obj: C:/Projects/CPPML/TestingFile.cpp \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/specfun.h \
+  C:/msys64/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/std_thread.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
@@ -118,6 +121,7 @@ CMakeFiles/ml_test.dir/TestingFile.cpp.obj: C:/Projects/CPPML/TestingFile.cpp \
   C:/msys64/ucrt64/include/c++/14.2.0/ext/numeric_traits.h \
   C:/msys64/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
   C:/msys64/ucrt64/include/c++/14.2.0/ext/type_traits.h \
+  C:/msys64/ucrt64/include/c++/14.2.0/fstream \
   C:/msys64/ucrt64/include/c++/14.2.0/initializer_list \
   C:/msys64/ucrt64/include/c++/14.2.0/ios \
   C:/msys64/ucrt64/include/c++/14.2.0/iosfwd \
@@ -134,6 +138,7 @@ CMakeFiles/ml_test.dir/TestingFile.cpp.obj: C:/Projects/CPPML/TestingFile.cpp \
   C:/msys64/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/14.2.0/random \
   C:/msys64/ucrt64/include/c++/14.2.0/ratio \
+  C:/msys64/ucrt64/include/c++/14.2.0/sstream \
   C:/msys64/ucrt64/include/c++/14.2.0/stdexcept \
   C:/msys64/ucrt64/include/c++/14.2.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/14.2.0/streambuf \
@@ -158,8 +163,10 @@ CMakeFiles/ml_test.dir/TestingFile.cpp.obj: C:/Projects/CPPML/TestingFile.cpp \
   C:/msys64/ucrt64/include/c++/14.2.0/typeinfo \
   C:/msys64/ucrt64/include/c++/14.2.0/vector \
   C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
   C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
   C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
@@ -231,8 +238,6 @@ C:/Projects/CPPML/Headers/Loss.hpp:
 C:/Projects/CPPML/Headers/Architecture.hpp:
 
 C:/Projects/CPPML/Headers/Layers.hpp:
-
-C:/msys64/ucrt64/include/c++/14.2.0/bits/shared_ptr.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bit:
 
@@ -330,6 +335,10 @@ C:/msys64/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/exception_ptr.h:
 
+C:/msys64/ucrt64/include/c++/14.2.0/bits/uses_allocator.h:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/codecvt.h:
+
 C:/msys64/ucrt64/include/c++/14.2.0/debug/debug.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/charconv.h:
@@ -341,6 +350,8 @@ C:/msys64/ucrt64/include/c++/14.2.0/bits/cxxabi_forced.h:
 C:/msys64/ucrt64/include/c++/14.2.0/bits/cxxabi_init_exception.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/exception_defines.h:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/fstream.tcc:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/hash_bytes.h:
 
@@ -355,6 +366,8 @@ C:/msys64/ucrt64/include/c++/14.2.0/bits/predefined_ops.h:
 C:/msys64/ucrt64/include/c++/14.2.0/bits/locale_classes.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/locale_classes.tcc:
+
+C:/msys64/ucrt64/include/c++/14.2.0/fstream:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/locale_facets.h:
 
@@ -378,11 +391,17 @@ C:/msys64/ucrt64/include/c++/14.2.0/bits/refwrap.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/requires_hosted.h:
 
+C:/msys64/ucrt64/include/c++/14.2.0/bits/shared_ptr.h:
+
 C:/msys64/ucrt64/include/c++/14.2.0/bits/shared_ptr_atomic.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/shared_ptr_base.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/specfun.h:
+
+C:/msys64/ucrt64/include/c++/14.2.0/tuple:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/sstream.tcc:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/std_abs.h:
 
@@ -423,8 +442,6 @@ C:/msys64/ucrt64/include/c++/14.2.0/bits/this_thread_sleep.h:
 C:/msys64/ucrt64/include/c++/14.2.0/bits/uniform_int_dist.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/unique_ptr.h:
-
-C:/msys64/ucrt64/include/c++/14.2.0/bits/uses_allocator.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h:
 
@@ -506,6 +523,8 @@ C:/msys64/ucrt64/include/c++/14.2.0/pstl/pstl_config.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/random:
 
+C:/msys64/ucrt64/include/c++/14.2.0/sstream:
+
 C:/msys64/ucrt64/include/c++/14.2.0/stdexcept:
 
 C:/msys64/ucrt64/include/c++/14.2.0/stdlib.h:
@@ -534,17 +553,21 @@ C:/msys64/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc:
 
 C:/msys64/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc:
 
+C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h:
+
 C:/msys64/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc:
 
 C:/msys64/ucrt64/include/c++/14.2.0/tr1/special_function_util.h:
-
-C:/msys64/ucrt64/include/c++/14.2.0/tuple:
 
 C:/msys64/ucrt64/include/c++/14.2.0/type_traits:
 
 C:/msys64/ucrt64/include/c++/14.2.0/typeinfo:
 
 C:/msys64/ucrt64/include/c++/14.2.0/vector:
+
+C:/msys64/ucrt64/include/pthread_unistd.h:
+
+C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
 
@@ -595,8 +618,6 @@ C:/msys64/ucrt64/include/pthread_compat.h:
 C:/msys64/ucrt64/include/pthread_signal.h:
 
 C:/msys64/ucrt64/include/pthread_time.h:
-
-C:/msys64/ucrt64/include/pthread_unistd.h:
 
 C:/msys64/ucrt64/include/sched.h:
 
