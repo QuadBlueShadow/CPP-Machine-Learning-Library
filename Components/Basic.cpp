@@ -26,3 +26,9 @@ std::vector<std::vector<float>> NetComponent::get_neurons(){
 std::vector<float> NetComponent::get_biases(){
     return std::vector<float>(1);
 }
+
+void NetComponent::set_neurons(int x, int y, float val){
+}
+
+void NetComponent::set_biases(int x, float val){
+}

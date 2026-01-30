@@ -1,5 +1,7 @@
 #pragma once
 #include "Basic.hpp"
+#include <fstream>
+#include <sstream>
 
 // Basic Neural Net
 class Model{
@@ -22,4 +24,8 @@ class Model{
         void backprop(std::vector<float> loss);
 
         void print_net();
+
+        bool save_net(std::string name);
+
+        bool load_net(std::string name, bool print);
 };

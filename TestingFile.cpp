@@ -32,7 +32,7 @@ int main() {
 
     std::vector<float> desired_output = {10};
 
-    for (int i = 0; i < 2000; i++){
+    for (int i = 0; i < 0; i++){
         if (i > 1500)
             optim.change_lr(0.01);
 
@@ -49,9 +49,10 @@ int main() {
         std::cout << "Output2: " << output[0] << std::endl;
     }
 
-    //color_predictor.print_net();
+    color_predictor.load_net("Net", false);
+    color_predictor.print_net();
     
-    std::this_thread::sleep_for(std::chrono::seconds(5)); 
+    std::this_thread::sleep_for(std::chrono::seconds(50)); 
     
     return 0;
 }

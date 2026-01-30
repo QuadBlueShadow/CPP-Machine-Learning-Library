@@ -132,3 +132,11 @@ std::vector<std::vector<float>> LinearLayer::get_neurons(){
 std::vector<float> LinearLayer::get_biases(){
     return this->biases;
 }
+
+void LinearLayer::set_neurons(int x, int y, float val){
+    neurons[x][y] = val;
+}
+
+void LinearLayer::set_biases(int x, float val){
+    biases[x] = val;
+}

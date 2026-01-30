@@ -15,10 +15,15 @@ class LinearLayer : public NetComponent{
         void apply_changes(float lr) override;
         // Used to clip the adjustement gradients to prevent exploding gradients
         void clip_gradients(float clip) override;
+
         // Returns the nuerons of a net component
         std::vector<std::vector<float>> get_neurons() override;
         // Returns the biases of a net component
         std::vector<float> get_biases() override;
+        // Returns the nuerons of a net component
+        void set_neurons(int x, int y, float val) override;
+        // Returns the biases of a net component
+        void set_biases(int x, float val) override;
 
         // Is this the first layer, used to make sure our biases are correct for the first layer
         bool first = false;
