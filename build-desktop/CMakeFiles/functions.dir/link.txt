@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libfunctions.a CMakeFiles/functions.dir/Components/ActivationFunctions.cpp.obj CMakeFiles/functions.dir/Components/Architecture.cpp.obj CMakeFiles/functions.dir/Components/Layers.cpp.obj CMakeFiles/functions.dir/Components/Basic.cpp.obj CMakeFiles/functions.dir/Components/Loss.cpp.obj CMakeFiles/functions.dir/Components/Optimizer.cpp.obj
+C:\msys64\ucrt64\bin\ranlib.exe libfunctions.a
