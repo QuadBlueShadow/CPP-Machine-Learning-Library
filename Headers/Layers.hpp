@@ -47,3 +47,13 @@ class LinearLayer : public NetComponent{
 
         float clamp(float x, float max, float min);
 };
+
+class ConvolutionalLayer : public NetComponent{
+    public:
+        // Runs a forward pass through the layer
+        std::vector<float> run(std::vector<float> inputs) override;
+
+        ConvolutionalLayer();
+    private:
+
+};

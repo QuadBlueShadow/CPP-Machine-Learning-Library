@@ -140,3 +140,9 @@ void LinearLayer::set_neurons(int x, int y, float val){
 void LinearLayer::set_biases(int x, float val){
     biases[x] = val;
 }
+
+// ------------------------------- CONVOLUTIONAL LAYER ----------------------------------------------------------
+
+std::vector<float> run(std::vector<float> inputs){
+    return std::vector<float>(1);
+}
