@@ -35,8 +35,6 @@ LinearLayer::LinearLayer(int neurons, int outputs){
 std::vector<float> LinearLayer::run(std::vector<float> inputs){
     // Create our output vector with the size matching the number of neurons in the next layer
     std::vector<float> outputs(neurons[0].size());
-   
-    last_input = inputs;
 
     // We add the biases to our input
     if (!first){
@@ -44,6 +42,8 @@ std::vector<float> LinearLayer::run(std::vector<float> inputs){
             inputs[i] += biases[i];
         }
     }
+   
+    last_input = inputs;
 
     // We go through each neuron
     for (int i = 0;  i < inputs.size(); i++){
