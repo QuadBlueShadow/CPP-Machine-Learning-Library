@@ -3,7 +3,7 @@
 #include <vector>
 #include <thread>
 #include <chrono>
-#include <memory>
+#include <memory>   
 
 #include "Architecture.hpp"
 #include "ActivationFunctions.hpp"
