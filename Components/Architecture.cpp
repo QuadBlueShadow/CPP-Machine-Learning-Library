@@ -45,7 +45,7 @@ bool Model::save_net(std::string name){
     outputFile.open(name + ".csv");
 
     if (!outputFile.is_open()) {
-        std::cerr << "Error: Could not open the file!" << std::endl;
+        std::cout << "Error: Could not open the file!" << std::endl;
         return false;
     }
 
@@ -66,10 +66,10 @@ bool Model::save_net(std::string name){
 }
 
 bool Model::load_net(std::string name, bool print){
-    std::ifstream file(name+".csv");
+    std::ifstream file(name + ".csv");
 
     if (!file.is_open()) {
-        std::cerr << "Error: Could not open the file." << std::endl;
+        std::cout << "Error: Could not open the file." << std::endl;
         return false;
     }
 

@@ -14,44 +14,41 @@
 
 int main() {
     std::vector<std::shared_ptr<NetComponent>> layers;
-    layers.push_back(std::make_shared<LinearLayer>(1, 100));
-    layers.push_back(std::make_shared<LeakyRelu>());
-    layers.push_back(std::make_shared<LinearLayer>(100, 1));
+    layers.push_back(std::make_shared<LinearLayer>(1, 1));
+    //layers.push_back(std::make_shared<LeakyRelu>());
+    layers.push_back(std::make_shared<LinearLayer>(1, 1));
 
-    Model color_predictor(layers);
+    Model model(layers);
     L2Loss loss_fn;
-    Adam optim(&color_predictor, 0.001);
+    Adam optim(&model, 0.01);
 
-    //color_predictor.print_net();
+    std::vector<float> targets;
 
-    std::vector<float> input = {1};
-
-    std::vector<float> output = color_predictor.run(input);
-
-    std::cout << "Output: " << output[0] << std::endl;
-
-    std::vector<float> desired_output = {10};
-
-    for (int i = 0; i < 2000; i++){
-        if (i > 1500)
-            optim.change_lr(0.0001);
-
-        float loss = loss_fn.calculate(output, desired_output);
-        std::vector<float> der = loss_fn.derivative();
-
-        // std::cout << "Loss: " << loss << std::endl;
-        //std::cout << "Derivative: " << der[0] << std::endl;
-        color_predictor.backprop(der);
-        optim.apply_changes(0.5);
-
-        output = color_predictor.run(input);
-
-        std::cout << "Output2: " << output[0] << std::endl;
+    for (int i = 0; i < 10; i++){
+        targets.push_back(i*2 + 1);
     }
 
-    color_predictor.save_net("Net");
-    //color_predictor.load_net("Net", false);
-    //color_predictor.print_net();
+    std::vector<float> prediction;
+
+    for (int x = 0; x < 600; x++){
+        for (int i = 0; i < targets.size(); i++){
+            prediction = model.run({(float)i});
+
+            loss_fn.calculate(prediction, {targets[i]});
+            model.backprop(loss_fn.derivative());
+
+            optim.apply_changes(0.5);
+        }
+    }
+
+    for (int i = 0; i < targets.size(); i++){
+        prediction = model.run({(float)i});
+
+        std::cout << "Prediction: " << prediction[0] << ", Target:" << targets[i] << ", Loss:" << loss_fn.calculate(prediction, {targets[i]}) << std::endl;
+        model.backprop(loss_fn.derivative());
+
+        optim.apply_changes(0.5);
+    }
     
     std::this_thread::sleep_for(std::chrono::seconds(10)); 
     
