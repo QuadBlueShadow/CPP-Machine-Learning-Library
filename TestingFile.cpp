@@ -22,7 +22,8 @@ int main() {
     L2Loss loss_fn;
     Adam optim(&model, 0.01);
 
-    model.save_net("Net");
+    model.load_net("net_test", true);
+    model.print_net();
 
     // std::vector<float> targets;
 
@@ -52,7 +53,7 @@ int main() {
     //     optim.apply_changes(0.5);
     // }
     
-    // std::this_thread::sleep_for(std::chrono::seconds(10)); 
+    std::this_thread::sleep_for(std::chrono::seconds(100)); 
     
     return 0;
 }

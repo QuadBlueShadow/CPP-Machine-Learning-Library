@@ -35,7 +35,7 @@ with open('net.csv', 'w', newline='') as csvfile:
 
             for z in range(len(list_of_params[i])):
                 print("        Weight " + str(z + 1) + ": " + str(list_of_params[i][z][x]))
-                csvfile.write("Weight," + str(x + 1) + "," + str(list_of_params[i][z][x].item()) + "\n")
+                csvfile.write("Weight," + str(z + 1) + "," + str(list_of_params[i][z][x].item()) + "\n")
             
             if i == 0:
                 print("        Bias " + str(x + 1) + ": " + "0")
