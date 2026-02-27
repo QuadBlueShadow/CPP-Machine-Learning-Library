@@ -25,7 +25,7 @@ LinearLayer::LinearLayer(int neurons, int outputs){
     //std::cout << this->neurons.size();
 
     // Randomly generate the biases
-    for (int y = 0; y < neurons; y++){
+    for (int y = 0; y < outputs; y++){
         this->biases.push_back(distr(gen)/50.0);
         this->bias_adjustements.push_back(0);
     }
@@ -38,9 +38,7 @@ std::vector<float> LinearLayer::run(std::vector<float> inputs){
 
     // We add the biases to our input
     if (!first){
-        for (int i = 0; i < biases.size(); i++){
-            inputs[i] += biases[i];
-        }
+        
     }
    
     last_input = inputs;
@@ -52,6 +50,10 @@ std::vector<float> LinearLayer::run(std::vector<float> inputs){
         for (int y = 0; y < neurons[i].size(); y++){
             outputs[y] += neurons[i][y] * inputs[i];
         }
+    }
+
+    for (int i = 0; i < outputs.size(); i++){
+        outputs[i] += biases[i];
     }
 
     return outputs;

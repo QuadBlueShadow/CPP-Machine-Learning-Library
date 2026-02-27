@@ -32,10 +32,13 @@ void Model::print_net(){
             for (int z = 0; z < this->layers[i]->get_neurons()[y].size(); z++){
                 std::cout << "       Weight " << (z + 1) << ": " << this->layers[i]->get_neurons()[y][z] << std::endl;
             }
-
-            std::cout << "    Bias " << (y + 1) << ": " << this->layers[i]->get_biases()[y] << std::endl;
-            std::cout << std::endl;
+            
         }
+
+        for (int z = 0; z < this->layers[i]->get_biases().size(); z++){
+            std::cout << "    Bias " << (z + 1) << ": " << this->layers[i]->get_biases()[z] << std::endl;
+        }
+        std::cout << std::endl;
     }
 }
 
@@ -56,10 +59,13 @@ bool Model::save_net(std::string name){
             for (int z = 0; z < this->layers[i]->get_neurons()[y].size(); z++){
                 outputFile << "Weight," << (z + 1) << "," << this->layers[i]->get_neurons()[y][z] << std::endl;
             }
-
-            outputFile << "Bias," << (y + 1) << "," << this->layers[i]->get_biases()[y] << std::endl;
-            outputFile << std::endl;
         }
+
+        for (int y = 0; y < this->layers[i]->get_biases().size(); y++){
+            outputFile << "Bias," << (y + 1) << "," << this->layers[i]->get_biases()[y] << std::endl;
+        }
+        
+        outputFile << std::endl;
     }
 
     return true;
@@ -113,7 +119,7 @@ bool Model::load_net(std::string name, bool print){
                 }
 
                 if (row_data[0] == "Bias"){
-                    layers[layer]->set_biases(neuron, std::stof(row_data[2]));
+                    layers[layer]->set_biases(std::stoi(row_data[1])-1, std::stof(row_data[2]));
                 }
             }
             
